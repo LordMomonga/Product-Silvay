@@ -57,7 +57,7 @@ function Meteo() {
        <div className="head">
       <div className="lop">
       <div className="logo">
-      <PiFlowerLotusBold />  sivay
+      <span><PiFlowerLotusBold /> </span> sivay
       </div>
       <div className="back">
       <FaCaretLeft />
