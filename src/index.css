@@ -1,0 +1,223 @@
+
+body {
+  margin: 0;
+  padding: 50px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: rgb(255, 255, 255);
+
+  font-family: Poppins, sans-serif;
+}
+h1{
+  font-size: 35px;
+  text-transform: capitalize;
+  color: gray;
+}
+head{
+  padding-inline: 50px;
+  padding-block: 11px;
+ position: absolute;
+ z-index: 1000;
+ top: 0%;
+  width: 90%;
+  background-color: transparent;
+}
+.weather ,.earth{
+  box-shadow: 5px 5px 10px gray;
+  
+  padding: 10px;
+  padding-inline: 25px;
+  border-radius: 10px;
+  padding-block: 10px;
+}
+.weather input{
+  padding: 5px;
+  margin-right: 15px;
+  border-radius: 5px;
+  border: none;
+  background: white;
+  border-bottom: 1px gray solid;
+  padding-block: 15px;
+}
+.weather button{
+  padding: 5px;
+  padding-inline: 10px;
+  font-weight: bold;
+  background-color: rgb(136, 136, 252);
+  color: white;
+  border: none;
+  padding-block: 15px;
+  border-radius: 5px;
+}
+.lop{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.logo{
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  background: black;
+  color: white;
+  padding-inline: 15px;
+  padding-block: 2px;
+  border-radius: 15px;
+}
+.back{
+  background-color: black;
+  color: white;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  border-radius: 30%;
+  padding: 20px;
+
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+.total{
+  display: flex;
+  justify-content: space-around;
+  margin-top: 14%;
+}
+.food{
+  padding-inline: 40px ;
+}
+.food span{
+display: block;
+margin-bottom: 15px;
+text-align: left;
+
+}
+.food span:last-child{
+  text-align: center;
+  color: rgb(110, 110, 243);
+  cursor: pointer;
+  border-bottom: 1px solid ;
+}
+@media (max-width: 768px) {
+  .App {
+      flex-direction: row; /* Change layout to horizontal for larger screens */
+  }
+
+  .head, .total, .earth, .possible {
+      flex: 0 0 25%; /* Allocate specific width for each section on larger screens */
+      font-size: 10px;
+  }
+}
+
+
+/* Media query for desktops and even larger screens (optional) */
+@media (max-width: 992px) {
+  .head, .total, .earth, .possible {
+    flex: 0 0 25%; /* Allocate specific width for each section on larger screens */
+    font-size: 10px;
+}
+.weather input{
+  padding: 5px;
+  margin-right: 5px;
+  border-radius: 5px;
+  border: none;
+  background: white;
+  border-bottom: 1px gray solid;
+  padding-block: 4px;
+}
+.possible span {
+  width: 100%;
+}
+.possible button{
+  font-size: 8px;
+  padding-inline: 5px;
+  font-weight: bold;
+  background-color: rgb(63, 119, 72);
+  color: white;
+  border: none;
+  padding-block: 5px;
+  border-radius: 5px;
+ position: flex;
+ justify-content: right;
+
+}
+.weather button{
+  font-size: 10px;
+  padding-inline: 5px;
+  font-weight: bold;
+  background-color: rgb(136, 136, 252);
+  color: white;
+  border: none;
+  padding-block: 5px;
+  border-radius: 5px;
+}
+.weather{
+  margin-bottom: 17px;
+}
+.total{
+  display: block;
+ 
+}
+.total:last-child{
+  margin-top: 5px;
+}
+h1{
+  font-size: 14px;
+}
+  /* You can add further adjustments here for wider screens */
+}
+popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  z-index: 100; /* Ensure popup is above other elements */
+}
+
+.popup-content {
+  position: absolute;
+  padding-inline: 10px;
+  width: 80%;
+  background: black;
+  top: 2%;
+  color: rgb(255, 255, 255);
+  height: 80vh;
+  transition: 0.5s ease-in-out;
+  transform: translateX(1);
+  /* Customize content styles */
+}
+
+.popup-content div{
+  margin-bottom: 10px;
+}
+.popup-content h1{
+  font-size: 25px;
+  border-bottom: 1px solid gray;
+
+}
+.popup-content span{
+  text-align: center;
+  color: gray;
+  margin-top: 10px;
+}
+
+.close-button {
+  position: absolute;
+  top: 15px;
+  color: white;
+  right: 10%;
+  cursor: pointer;
+  border: none;
+  background: none;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
