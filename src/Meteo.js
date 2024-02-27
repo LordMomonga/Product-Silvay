@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 
-import { FaCaretLeft } from "react-icons/fa";
+import { FaCaretLeft } from 'react-icons/fa';
 
 import { PiFlowerLotusBold } from "react-icons/pi";
 function Meteo() { 
